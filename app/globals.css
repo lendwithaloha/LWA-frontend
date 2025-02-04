@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Step Card Container */
+.step-card {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 50px) 0, /* Adjust width for connection */
+    100% 50%,
+    calc(100% - 50px) 100%,
+    0 100%,
+    50px 50%
+  );
+  position: relative;
+  overflow: hidden;
+  padding: 1.5rem 4rem;
+}
+
+/* Forward Arrow: Wider for connection */
+.step-arrow {
+  clip-path: polygon(0 0, 100% 0, calc(100% - 50px) 50%, 100% 100%, 0 100%);
+  position: absolute;
+  top: 0;
+  right: -1px; /* Prevent gap */
+  height: 100%;
+  width: 50px; /* Matches container adjustment */
+  background-color: inherit;
+  z-index: 1;
+}
+
+/* Back Arrow: Matches Forward Arrow */
+.step-back-arrow {
+  clip-path: polygon(100% 0, 0 0, 50px 50%, 0 100%, 100% 100%);
+  position: absolute;
+  top: 0;
+  left: -1px; /* Prevent gap */
+  height: 100%;
+  width: 50px; /* Matches container adjustment */
+  background-color: inherit;
+  z-index: 1;
+}
+
+
+.onboarding-highlight {
+  background-color: #f0fbff; /* A very light blue */
+  color: #4ea1d3; /* A softer blue for text */
+  border-right: 2px solid #b3e5fc; /* A lighter, thinner border */
+  border-radius: 4px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c7c7c7;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}

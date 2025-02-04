@@ -1,0 +1,15 @@
+export const predefinedQuestions = [
+    { question: "Are you a U.S. citizen?", answer: true },
+    { question: "Do you have ownership interest?", answer: true },
+    { question: "Do you have judgments against you?", answer: false },
+    { question: "Have you filed for bankruptcy?", answer: false },
+    { question: "Have you experienced foreclosure?", answer: false },
+    { question: "Are you involved in any lawsuits?", answer: false },
+    { question: "Have you committed any criminal offenses?", answer: false },
+    { question: "Do you have delinquent debt?", answer: false },
+    { question: "Do you have any loan obligations?", answer: false },
+    { question: "Are you required to pay alimony or support?", answer: false },
+    { question: "Did you borrow the down payment?", answer: false },
+    { question: "Are you a co-maker or endorser on a loan?", answer: false },
+    { question: "Is this your primary residence?", answer: false },
+];
